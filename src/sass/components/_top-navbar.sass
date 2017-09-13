@@ -1,0 +1,42 @@
+$offcanvas-full-screen-bg: $black
+$offcanvas-full-screen-side: left
+$offcanvas-full-screen-closebutton-size: 5rem
+
+.top-bar
+  &-right
+    padding: $topbar-right-spacing
+    border: $topbar-right-border
+
+.offcanvas-full-screen 
+  @include off-canvas-base($background: $offcanvas-full-screen-bg, $transition: 0.3s ease-in-out)
+  @include off-canvas-position($position: $offcanvas-full-screen-side, $size: 100%)
+
+.offcanvas-full-screen-inner
+  padding: .5rem
+  
+.offcanvas-full-screen-menu
+  @include menu-base
+  @include menu-direction(vertical)
+  text-align: center
+
+  a
+    margin: 2.7rem 0
+    font-size: 2.5rem
+    color: $white;
+
+    &:hover
+      color: darken($white, 30%)
+
+.offcanvas-full-screen-close 
+  width: 100%
+  text-align: right
+  color: $white
+  font-size: $offcanvas-closebutton-custom-size
+  span
+    display: inline-block
+    padding: $topbar-close-right-spacing
+    border: $topbar-close-border
+
+  &:hover 
+    color: darken($white, 30%)
+

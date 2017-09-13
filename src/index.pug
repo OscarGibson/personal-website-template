@@ -9,8 +9,13 @@ html
     include pug/styles.pug
   body
     include pug/svg.pug
+    include pug/includes/top-navbar.pug
 
-    //- Code here
-
+    div.callout.large
+      div.row.column.text-center
+        h1 My Blog
+        h2.subheader here will be something interesting
+    div.row.medium-8.large-7.columns
+      include pug/includes/blog-post.pug
 
     include pug/scripts.pug

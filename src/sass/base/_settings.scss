@@ -447,6 +447,7 @@ $offcanvas-transition-length: 0.5s;
 $offcanvas-transition-timing: ease;
 $offcanvas-fixed-reveal: true;
 $offcanvas-exit-background: rgba($white, 0.25);
+$offcanvas-closebutton-custom-size: 2.6rem;
 $maincontent-class: 'off-canvas-content';
 
 // 25. Orbit
@@ -618,8 +619,12 @@ $tooltip-radius: $global-radius;
 // -----------
 
 $topbar-padding: 0.5rem;
-$topbar-background: $light-gray;
+$topbar-background: $white;
 $topbar-submenu-background: $topbar-background;
 $topbar-title-spacing: 0.5rem 1rem 0.5rem 0;
+$topbar-right-spacing: 0.5rem;
+$topbar-close-right-spacing: 0 0.37rem;
+$topbar-right-border: 1px solid $black;
+$topbar-close-border: 1px solid $white;
 $topbar-input-width: 200px;
-$topbar-unstack-breakpoint: medium;
+$topbar-unstack-breakpoint: small;
