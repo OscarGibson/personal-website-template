@@ -6,12 +6,14 @@ doctype html
 html
   head(lang="en")
     include pug/metatags.pug
-    +title('Main')
+    +title('Blog')
     include pug/styles.pug
   body
     include pug/svg.pug
     include pug/includes/top-navbar.pug
 
-    +page-header('Main page','void...')
+    +page-header('My Blog','here will be something interesting')
+    div.row.medium-8.large-7.columns
+      include pug/includes/blog-post.pug
 
     include pug/scripts.pug
