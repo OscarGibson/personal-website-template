@@ -1,0 +1,70 @@
+include pug/project-settings.pug
+include pug/mixins/mixins.pug
+include pug/mixins/page-header.pug
+
+doctype html
+html
+  head(lang="en")
+    include pug/metatags.pug
+    +title('About')
+    include pug/styles.pug
+  body
+    include pug/svg.pug
+    include pug/includes/top-navbar.pug
+
+    div.portfolio-resume.row
+
+      div.large-4.columns
+        div.portfolio-resume-wrapper
+          img.portfolio-resume-headshot(src="https://placehold.it/175" alt="headshot")
+          h3.portfolio-resume-header Skills
+          ul
+            li Playing Cornhole
+            li Balancing on my head
+            li Drinking milk
+            li Going to sleep
+            li Not updating my phone apps
+
+      div.large-4.columns
+        div.portfolio-resume-wrapper
+          h3.portfolio-resume-header Experience
+          div.portfolio-resume-spacing
+            h5
+              strong Nanny for Goats
+            p I spent a year at a farm in Ireland raising baby goats. I had to feed them, pet them and play. 
+          ul
+            li Making goats noises
+            li Cleaning their stalls
+            li Milking the goats
+
+
+      div.portfolio-resume-spacing
+        h5
+          strong SandCastle Builder
+        p I have crafted the skill of sandcastles growing up on the beaches of Galveston.
+        ul
+          li Avoiding Jellyfish
+          li Applying the right amount of water
+          li Wearing sunscreen
+
+      div.large-4.columns
+        div.portfolio-resume-wrapper
+        h3.portfolio-resume-header About Me
+        p My eclectic background and hippy upbringing makes me a rare commodity. I'd love to get together and talk over a non-GMO kale smoothie. Email or call me anytime!
+        div.portfolio-resume-contact-info
+          a(href="mailto:#")
+            i.fa.fa-envelope(aria-hidden="true")
+            span someone@email.com
+
+        div class="portfolio-resume-contact-info"
+          a(href="tel:+14083410600")
+            i.fa.fa-phone(aria-hidden="true")
+            span 555.555.5555
+
+    include pug/scripts.pug
+
+
+
+
+
+
