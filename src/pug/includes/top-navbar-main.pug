@@ -1,0 +1,15 @@
+div#offcanvas-full-screen.offcanvas-full-screen(data-off-canvas data-transition="overlap")
+  div.offcanvas-full-screen-inner
+    button.offcanvas-full-screen-close(aria-label="Close menu" type="button" data-close)
+      span(aria-hidden="true") &times;
+
+    ul.offcanvas-full-screen-menu
+      li
+        a(href="/") Home
+        a(href="/blog.html") Blog
+        a(href="/contact.html") Contacts
+
+div.off-canvas-content.fixed(data-off-canvas-content)
+  div.top-bar.top-bar-main
+    div.top-bar-right
+      button.menu-icon.dark(type="button" data-toggle="offcanvas-full-screen")

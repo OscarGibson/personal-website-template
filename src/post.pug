@@ -1,0 +1,19 @@
+include pug/project-settings.pug
+include pug/mixins/mixins.pug
+include pug/mixins/post-header.pug
+
+doctype html
+html
+  head(lang="en")
+    include pug/metatags.pug
+    +title('Blog')
+    include pug/styles.pug
+  body
+    include pug/svg.pug
+    include pug/includes/top-navbar.pug
+
+    +post-header('Super heading to post ','post description','https://placehold.it/850x350')
+    div.row.medium-8.large-7.columns
+      include pug/includes/post-single.pug
+
+    include pug/scripts.pug

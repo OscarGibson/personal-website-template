@@ -15,10 +15,18 @@ $offcanvas-full-screen-closebutton-size: 5rem
   &-right
     padding: $topbar-right-spacing
     border: $topbar-right-border
+  &-main
+    background: none;
+    border: none;
 
 .offcanvas-full-screen 
   @include off-canvas-base($background: $offcanvas-full-screen-bg, $transition: 0.3s ease-in-out)
   @include off-canvas-position($position: $offcanvas-full-screen-side, $size: 100%)
+  //&.is-transition-overlap
+  transition: opacity .3s ease-in-out, transform .3s ease-in-out
+  opacity: 0
+  &.is-open
+    opacity: 1
 
 .offcanvas-full-screen-inner
   padding: .5rem
@@ -48,4 +56,3 @@ $offcanvas-full-screen-closebutton-size: 5rem
 
   &:hover 
     color: darken($white, 30%)
-
